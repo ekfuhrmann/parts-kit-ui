@@ -1,0 +1,14 @@
+{
+  "plugins": {
+    "@minko-fe/postcss-pxtorem": {
+      "rootValue": 16,
+      "propList": [
+        "*"
+      ],
+      "mediaQuery": true,
+      "minPixelValue": 0
+    },
+    "tailwindcss/nesting": true,
+    "tailwindcss": true
+  }
+}
