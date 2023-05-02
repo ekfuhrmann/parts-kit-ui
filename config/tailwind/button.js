@@ -63,6 +63,19 @@ module.exports = plugin(({ addComponents }) => {
         '@apply wh-40': {},
       },
     },
+
+    // Button toggle
+    '.btn-toggle-group': {
+      '@apply inline-flex items-center rounded bg-white ring-1 ring-blue-100 divide-x divide-blue-100':
+        {},
+    },
+    '.btn-toggle': {
+      '@apply wh-46 flex items-center justify-center transition-colors text-blue-500 transition duration-300 first:rounded-l last:rounded-r hover:bg-blue-50 hover:border-blue-600 hover:text-blue-600 active:bg-blue-100 disabled:!bg-blue-50 disabled:!text-blue-300 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2':
+        {},
+      svg: {
+        '@apply wh-20': {},
+      },
+    },
   };
 
   addComponents(buttons);

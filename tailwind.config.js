@@ -17,7 +17,7 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      white: '#ffffff',
+      white: '#FFFFFF',
       black: '#000000',
       gray: {
         100: '#D4D5D6',
@@ -90,6 +90,10 @@ module.exports = {
       90: '0.9',
       100: '1',
     },
+    boxShadow: ({ theme }) => ({
+      card: `0 4px 20px ${theme('colors.gray.500/5%')},
+            inset 0 0 0 1px ${theme('colors.blue.100')}`,
+    }),
     spacing: {
       ...pxPair(0),
       ...pxPair(1),
@@ -125,10 +129,12 @@ module.exports = {
       ...theme('spacing'),
     }),
     wh: {
+      ...pxPair(14),
       ...pxPair(20),
       ...pxPair(24),
       ...pxPair(40),
       ...pxPair(46),
+      ...pxPair(64),
     },
     fontFamily: {
       sans: ['Manrope', 'sans-serif'],
